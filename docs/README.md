@@ -4,21 +4,18 @@ This repository contains OctoAcme's project management process documents. This R
 
 ## OctoAcme Project Management Overview
 
-OctoAcme follows a structured five-phase project lifecycle that emphasizes iterative delivery, clear ownership, and data-informed decision-making. The process begins with **Initiation**, where new projects are validated through a lightweight Project One-pager that establishes the business need, success metrics, stakeholder alignment, and resource requirements. Once approved, the project moves into **Planning**, where work is broken down into shippable increments with prioritized backlogs, acceptance criteria, and a release plan. The core **Execution & Tracking** phase leverages daily standups, weekly delivery syncs, and GitHub Projects boards (with columns: Backlog, Ready, In Progress, In Review, QA, Done) to manage day-to-day progress. Pull requests are kept small (≤400 lines when possible), require CI validation and at least one approval before merging, and are tracked against acceptance criteria. After delivery, projects move through **Release & Deployment** with pre-release checklists, smoke testing, and rollback plans, followed by **Retrospectives & Continuous Improvement** to capture learnings and convert them into actionable improvements.
+OctoAcme follows a structured, five-phase project lifecycle designed to deliver customer value through iterative, data-informed execution. The process begins with **Initiation**, where new ideas are validated through a lightweight Project One-pager that confirms business need, identifies stakeholders, and establishes success metrics. Once approved, projects move into **Planning**, where work is broken into shippable increments with clear acceptance criteria, dependencies are mapped, and a prioritized backlog is created. The core **Execution & Tracking** phase emphasizes daily standups, weekly delivery syncs, and a GitHub Projects workflow with standardized PR practices (≤400 lines, automated testing, and peer review requirements). Finally, **Release & Deployment** and **Retrospective & Continuous Improvement** phases ensure quality releases with documented rollback plans and systematic capture of learnings to drive ongoing optimization.
 
-### Roles and Organization
+The organization operates with clearly defined roles that balance strategic and tactical responsibilities. **Product Managers** own the vision, prioritize the backlog, and define success metrics; **Project Managers** coordinate schedules, manage risks, and drive stakeholder communication; **Developers** implement features while maintaining test coverage and identifying technical risks; and **QA/Testing** roles validate quality and acceptance criteria. This structure ensures clear ownership and accountability, with weekly PM-PdM syncs and twice-weekly team standups maintaining alignment across engineering, product, and stakeholder groups.
 
-The organization defines clear roles and responsibilities across four core personas. **Product Managers** own the product vision, prioritize the backlog, and measure outcomes through success metrics. **Project Managers** coordinate delivery activities, manage schedules, risks, and communications to ensure projects stay on track and stakeholders remain aligned. **Developers** implement features, write tests, participate in code reviews, and help identify technical risks. **QA/Testing** validates quality and acceptance criteria. This distributed ownership model is reinforced through a consistent communication cadence: daily standups (15 minutes) focused on progress and blockers, weekly PM and PdM syncs, twice-weekly team standups, and monthly stakeholder updates.
-
-### Quality Assurance and Risk Management
-
-Risk and quality management are embedded throughout the lifecycle. Teams maintain a Risk Register capturing ID, description, impact, likelihood, owner, and mitigation plans, reviewed weekly during syncs. Escalation follows a three-level path: team-level triage → PM escalation to Product Lead and dependent teams → sponsor-level escalation for business-impacting issues. Quality assurance practices include unit tests for new logic, integration tests where applicable, end-to-end smoke tests before release, CI-based security scanning, and manual QA for feature acceptance. Success is tracked through velocity, burndown charts, and dashboards monitoring key signals (errors, latency, usage) identified in the Project One-pager. This comprehensive approach balances speed with rigor, ensuring OctoAcme delivers reliable, measurable value while maintaining transparency and psychological safety across teams.
+Quality and risk management are embedded throughout the execution lifecycle rather than treated as afterthoughts. OctoAcme mandates unit tests, integration tests, and end-to-end smoke tests before release, along with security scanning in CI. A formal Risk Register tracks identified threats by impact and likelihood, with weekly review during delivery syncs and escalation paths that move from team-level triage through PM, Product Lead, and Sponsor levels. Communication is intentionally structured through weekly status templates, monthly stakeholder updates, and ad-hoc incident playbooks, ensuring transparency across all stakeholders while maintaining psychological safety for honest feedback and continuous improvement.
 
 ---
 
 ## Process Documents
 
 ### Quick Reference
+
 - **Initiation**: Capture the problem, goals, stakeholders, and success metrics in a Project One-pager.
 - **Planning**: Break work into shippable increments, estimate, identify dependencies, and document a release plan.
 - **Execution & Tracking**: Use a project board, small PRs, CI checks, daily standups, and weekly syncs to track progress.
@@ -56,7 +53,7 @@ When creating an issue:
 
 ## How to Use These Docs
 
-- **New team members**: Start with the [Project Management Overview](./octoacme-project-management-overview.md) and [Roles & Personas](./octoacme-roles-and-personas.md) to understand the framework.
+- **New team members**: Start with the [Project Management Overview](./octoacme-project-management-overview.md) and [Roles & Personas](./octoacme-roles-and-personas.md) to understand the framework and key roles.
 - **Project leads**: Reference the [Initiation Guide](./octoacme-project-initiation.md) and [Planning](./octoacme-project-planning.md) docs when starting a new project.
 - **Delivery teams**: Use [Execution & Tracking](./octoacme-execution-and-tracking.md) for day-to-day guidance.
 - **Release managers**: Follow the [Release & Deployment](./octoacme-release-and-deployment.md) checklist before going live.
